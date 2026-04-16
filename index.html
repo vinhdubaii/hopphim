@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hộp Phim – Hộp Bánh Của Ngoại</title>
+  <title>Hộp Phim</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
   <style>
     :root {
@@ -204,6 +204,41 @@
       .content-area{padding:0 1rem 4rem}
       nav{padding:0 1rem}
     }
+
+    /* ── ARCHIVE OVERLAY ── */
+    .archive-overlay{
+      position:fixed;inset:0;z-index:9999;
+      background:rgba(0,0,0,0.88);
+      backdrop-filter:blur(8px);
+      display:flex;align-items:center;justify-content:center;
+      padding:1.5rem;
+    }
+    .archive-modal{
+      background:var(--bg2);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:16px;
+      max-width:520px;width:100%;
+      padding:2.25rem 2rem;
+      box-shadow:0 24px 64px rgba(0,0,0,0.8),0 0 0 1px rgba(255,255,255,0.04);
+    }
+    .archive-modal-tag{
+      display:inline-flex;align-items:center;gap:0.4rem;
+      background:rgba(255,165,0,0.15);color:#ffaa33;
+      font-size:0.68rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;
+      padding:0.3rem 0.85rem;border-radius:20px;margin-bottom:1.25rem;
+      border:1px solid rgba(255,165,0,0.25);
+    }
+    .archive-modal h2{
+      font-size:1.35rem;font-weight:900;color:#fff;
+      margin-bottom:1.1rem;line-height:1.3;
+    }
+    .archive-modal p{
+      font-size:0.875rem;font-weight:500;
+      color:rgba(255,255,255,0.65);
+      line-height:1.75;margin-bottom:0.85rem;
+    }
+    .archive-modal p:last-of-type{margin-bottom:0}
+    .archive-modal .hl{color:rgba(255,255,255,0.88)}
   </style>
 </head>
 <body>
@@ -221,7 +256,7 @@
   <div class="billboard-bg"></div>
   <div class="billboard-content">
     <div class="billboard-tag">12/04/2026</div>
-    <h1 class="billboard-title">Hộp Bánh<br/><em>Của Ngoại</em></h1>
+    <h1 class="billboard-title">ABCD<br/><em>XYZ</em></h1>
     <p class="billboard-sub">Bài tập về nhà. Làm phim hoạt hình.</p>
     <div class="billboard-actions">
       <a href="https://youtu.be/oEtSnpup26k" target="_blank" class="btn-play">
@@ -300,6 +335,28 @@
     </div>
   </section>
 
+</div>
+
+<div class="archive-overlay">
+  <div class="archive-modal">
+    <div class="archive-modal-tag">📢 Thông báo</div>
+    <h2>Trang web đang tạm ngừng hoạt động</h2>
+    <p>
+      Vấn đề nan giải: Vì không có đủ tiền và băng thông, nếu không tạm dừng web,
+      <span class="hl">Microsoft sẽ siết nhà tôi mất...</span> 💸🏠
+    </p>
+    <p>
+      <span class="hl">Hộp Phim</span> là một dự án web nhỏ được xây dựng nhằm phục vụ cho bài tập
+      phim hoạt hình trong quá trình học tập. Đến thời điểm hiện tại, bài đã được thầy cô xem và
+      chấm xong, vì vậy website sẽ chính thức chuyển sang trạng thái
+      <span class="hl">lưu trữ (archive)</span> và tạm ngừng hoạt động xem phim trực tiếp.
+    </p>
+    <p>
+      Trong thời gian tới, một số nội dung (đặc biệt là video) có thể bị ẩn hoặc không còn
+      khả dụng nhằm đảm bảo hiệu suất và băng thông. Tuy nhiên, giao diện và thông tin dự án
+      vẫn sẽ được giữ lại như một phần <span class="hl">portfolio cá nhân</span>.
+    </p>
+  </div>
 </div>
 
 <script>
